@@ -1,0 +1,110 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: powderblue;
+    position: absolute;
+    left: 35%; 
+    top: 15%;
+    border: 1px solid black;
+}
+
+.shadow{
+    height: 2px;
+    width: 50px;
+    border-radius: 70%;
+    background-color: black;
+    opacity: 50%;
+    position: absolute;
+    left: 50%;
+    top: 86%;
+    animation: ease-in-out shadow 1s infinite;
+}
+
+
+.ball{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: 200px;
+
+    /* animation-name: ball;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; */
+    animation:  ease-in-out ball 1s infinite ;
+}
+
+@keyframes ball{
+  
+    10%{
+        height: 50px;
+        width: 50px;
+    }
+    25%{
+        height: 50px;
+        width: 50px;
+    }
+    50%{
+        height: 30px;
+        width: 50px;
+        transform: translateY(200px);
+    }
+    75%{
+        height: 50px;
+        width: 50px;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes shadow{
+
+    /* 10%{
+        width: 40px;
+    } */
+    25%{
+        width: 50px;
+    }
+    50%{
+        width: 40px;
+    }
+    75%{
+        width: 50px;
+    }
+    /* 100%{
+        width: 40px;
+    } */
+}
+
+
+
+
+.smallball{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    animation: ease-in-out smalball 1s infinite;
+}
+
+.bigball{
+    height: 100px;
+    width: 200px;
+    border-radius: 0 0 10em 10em;
+    background-color: blue;
+    animation: ease-in-out bigbal 1s infinite;
+}
+
+@keyframes smalball{
+    50%{
+        transform: translateX(150px);
+    }
+}
+
+@keyframes bigbal{
+    
+}
